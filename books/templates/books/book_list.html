@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books title</title>
+</head>
+<body>
+
+        <h1>{{ Books.title }}</h1>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Price:</strong> ${{ book.price }}</p>
+    <p><strong>Date:</strong> {{ book.created_date }}</p>
+    <p><strong>Description:</strong> {{ book.description }}</p>
+    <p><strong>Views:</strong> {{ book.number_of_views }}</p>
+    <img src="{{ book.image.url }}" width="200"><br>
+    <a href="{{ book.file.url }}">Download fille</a>
+
+</body>
+</html>
